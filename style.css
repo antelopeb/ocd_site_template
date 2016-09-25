@@ -1,0 +1,32 @@
+/*   
+
+Theme Name: WordPress BoilerPlate
+
+Theme URI: 
+
+Description: A search engine optimized website framework for WordPress
+based on Shape by Ian Stewart and optimized to use the HTML5 Boilerplate
+and Jquery.
+
+Author: Greg Davis
+
+Author URI: http://www.monsterworksdesign.com/
+
+Version: 1.0
+
+Tags: threaded-comments, microformats
+
+*/
+
+/* import normalize */
+@import url("css/_normalize.css");
+
+/* add in the reader-only class, this is the only dependency in this stylesheet */
+.reader-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
