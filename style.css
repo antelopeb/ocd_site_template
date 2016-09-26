@@ -20,8 +20,11 @@ Tags: threaded-comments, microformats
 
 /* import normalize */
 @import url("css/_normalize.css");
+@import url("css/bootstrap.min.css");
+@import url("css/fonts.css");
 
-/* add in the reader-only class, this is the only dependency in this stylesheet */
+/* Custom CSS for the OCD Site */
+
 .reader-only {
     position:absolute;
     left:-10000px;
@@ -29,4 +32,41 @@ Tags: threaded-comments, microformats
     width:1px;
     height:1px;
     overflow:hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: "Fontin sans";
+    font-size: 18px;
+}
+
+header {
+    text-align: center;
+    font-family: "Fontin";
+    margin-bottom: 36px;
+}
+header h1 {
+    font-family: "Fontin Smallcaps";
+    font-weight: bold;
+    font-size: 3.4em;
+    letter-spacing: -4px;
+    margin-bottom: 0;
+    line-height: 100%;
+}
+header h1 a {
+    color: rebeccapurple;
+}
+header h1 a:hover,
+header h1 a:focus,
+header h1 a:active {
+    color: purple;
+    text-decoration: none;
+}
+header h2 {
+    font-size: 1.5em;
+    color: #999;
+    margin-top: 0;
 }

@@ -29,10 +29,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <div class="container">
 	<header>
         <h1 id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
 <?php if ( is_home() || is_front_page() ) { ?>
-        <p class="subtitle" id="blog-description"><?php bloginfo( 'description' ) ?></p>
+        <h2 class="subtitle" id="blog-description"><?php bloginfo( 'description' ) ?></h2>
 <?php } else { ?>	
         <p class="description" id="blog-description"><?php bloginfo( 'description' ) ?></p>
 <?php } ?>
