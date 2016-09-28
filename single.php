@@ -8,7 +8,7 @@
 										
 					<div class="entry-content">
 <?php the_content(); ?>
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'wp_boilerplate' ) . '&after=</div>') ?>
+<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'ocd_site_template' ) . '&after=</div>') ?>
 					</div><!-- .entry-content -->
                     
                     <?php 

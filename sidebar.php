@@ -1,8 +1,8 @@
 <div id="primary" class="hidden">
     <div id="access">
-        <div class="reader-only"><a href="#content" title="<?php _e( 'Skip to content', 'wp_boilerplate' ) ?>"><?php _e( 'Skip to content', 'wp_boilerplate' ) ?></a></div>
-        <a href="<?php bloginfo( 'url' ) ?>/"><img src="wp-content/themes/wp_boilerplate/images/wp_boilerplateLogo.png" border="0" /></a>
-        <?php wp_nav_menu( array( 'wp_boilerplate' => 'menu-header' ) ); ?>
+        <div class="reader-only"><a href="#content" title="<?php _e( 'Skip to content', 'ocd_site_template' ) ?>"><?php _e( 'Skip to content', 'ocd_site_template' ) ?></a></div>
+        <a href="<?php bloginfo( 'url' ) ?>/"><img src="wp-content/themes/ocd_site_template/images/ocd_site_templateLogo.png" border="0" /></a>
+        <?php wp_nav_menu( array( 'ocd_site_template' => 'menu-header' ) ); ?>
         <!-- <?php wp_page_menu( 'sort_column=menu_order' ); ?>	-->		
     </div><!-- #access -->
 

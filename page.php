@@ -6,8 +6,8 @@
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					<div class="entry-content">
 <?php the_content(); ?>
-<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'wp_boilerplate' ) . '&after=</div>') ?>					
-<?php edit_post_link( __( 'Edit', 'wp_boilerplate' ), '<span class="edit-link">', '</span>' ) ?>
+<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'ocd_site_template' ) . '&after=</div>') ?>					
+<?php edit_post_link( __( 'Edit', 'ocd_site_template' ), '<span class="edit-link">', '</span>' ) ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-<?php the_ID(); ?> -->			
 			

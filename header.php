@@ -22,19 +22,26 @@
 	
 	<?php wp_head(); ?>
 	
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'wp_boilerplate' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
-	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'wp_boilerplate' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
+	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url'); ?>" title="<?php printf( __( '%s latest posts', 'ocd_site_template' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
+	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'ocd_site_template' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />	
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 </head>
 
 <body <?php body_class(); ?>>
     <div class="container">
-	<header>
-        <h1 id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
-<?php if ( is_home() || is_front_page() ) { ?>
-        <h2 class="subtitle" id="blog-description"><?php bloginfo( 'description' ) ?></h2>
-<?php } else { ?>	
-        <p class="description" id="blog-description"><?php bloginfo( 'description' ) ?></p>
-<?php } ?>
-	</header>
+        <div class="row">
+            <div class="col-md-2">
+                <img class="header-logo" src="wp-content/themes/ocd_site_template/images/mouse_final.jpg" />
+            </div>
+            <div class="col-md-10">
+                <header>
+                    <h1 id="blog-title"><span><a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a></span></h1>
+            <?php if ( is_home() || is_front_page() ) { ?>
+                    <h2 class="subtitle" id="blog-description"><?php bloginfo( 'description' ) ?></h2>
+            <?php } else { ?>	
+                    <p class="description" id="blog-description"><?php bloginfo( 'description' ) ?></p>
+            <?php } ?>
+                </header>
+            </div>
+        </div>

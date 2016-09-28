@@ -1,6 +1,6 @@
 /*   
 
-Theme Name: WordPress BoilerPlate
+Theme Name: Order Out of Chaos Designs, LLC
 
 Theme URI: 
 
@@ -41,6 +41,10 @@ Tags: threaded-comments, microformats
 body {
     font-family: "Fontin sans";
     font-size: 18px;
+    background: url("images/flower_background.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
 }
 
 header {
@@ -57,16 +61,36 @@ header h1 {
     line-height: 100%;
 }
 header h1 a {
-    color: rebeccapurple;
+    color: #000;
 }
 header h1 a:hover,
 header h1 a:focus,
 header h1 a:active {
-    color: purple;
+    color: #666;
     text-decoration: none;
 }
 header h2 {
     font-size: 1.5em;
     color: #999;
     margin-top: 0;
+}
+.header-logo {
+    margin: 15px;
+    width: 100%;
+    height: auto;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ac7ab5;
+    color: #fff;
+    font-family: "Fontin Sans";
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    line-height: 100%;
+}
+footer p {
+    margin: 0;
 }
